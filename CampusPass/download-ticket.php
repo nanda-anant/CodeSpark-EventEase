@@ -1,0 +1,2 @@
+<?php // Print-friendly ticket endpoint; use browser Print > Save as PDF for a portable PDF without an extra server library.
+require_once __DIR__.'/includes/auth.php';require_user();$id=(int)($_GET['id']??0);$s=$pdo->prepare('SELECT id FROM registrations WHERE id=? AND user_id=?');$s->execute([$id,$_SESSION['user_id']]);if(!$s->fetch()){http_response_code(404);exit('Ticket not found.');}redirect('ticket.php?id='.$id);

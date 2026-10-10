@@ -1,0 +1,1 @@
+document.querySelectorAll('[data-qr-token]').forEach(el=>{if(window.QRCode){new QRCode(el,{text:el.dataset.qrToken,width:180,height:180,colorDark:'#17243d',colorLight:'#ffffff',correctLevel:QRCode.CorrectLevel.M});}else{el.textContent='QR library unavailable. Use the entry code: see ticket details.';}});

@@ -1,0 +1,12 @@
+CAMPUSPASS DATABASE IMPORT
+
+1. Open http://localhost/phpmyadmin
+2. Click Import (no need to select a database first).
+3. Choose campuspass_portal.sql and click Import/Go.
+   The file now creates the campuspass_portal database and selects it itself,
+   so the "#1046 No database selected" error cannot happen.
+4. This SQL resets tables with matching names inside campuspass_portal. Back up data before re-importing.
+
+Demo admin:
+Email: admin@campuspass.local
+Password: Campus@2026!

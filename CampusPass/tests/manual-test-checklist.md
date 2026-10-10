@@ -1,0 +1,19 @@
+# Manual acceptance checklist
+- [ ] Import `database/campuspass_portal.sql` into a fresh XAMPP MySQL setup.
+- [ ] Open public homepage and browse published events.
+- [ ] Register a participant account and log in.
+- [ ] Register for a future published event with capacity available.
+- [ ] Confirm duplicate registration is blocked.
+- [ ] Reopen ticket from My Events and print / Save as PDF.
+- [ ] Sign in as `admin@campuspass.local` and change demo password.
+- [ ] Create/edit/publish an event from the admin portal.
+- [ ] Check in using an entry code; confirm second attempt is rejected.
+- [ ] Verify report counts and CSV export.
+- [ ] Confirm logged-out users cannot open admin dashboard.
+- [ ] Create account: try empty fields, bad email, 9-digit mobile, weak password, mismatched confirm - each shows an inline error; valid data succeeds.
+- [ ] Turn off JavaScript and repeat - server still rejects invalid data with an error list.
+- [ ] Admin create event: past date, end time before start, capacity 0, registration end before start, non-URL image are all rejected.
+- [ ] Admin edit event: capacity below existing registrations is rejected.
+- [ ] Admin profile: new password without current password is rejected; mismatched confirmation is rejected.
+- [ ] Reports: "to" date earlier than "from" shows an inline error.
+- [ ] Check-in desk: short/invalid code is rejected before the request is sent.
