@@ -1,0 +1,11 @@
+body{background:radial-gradient(circle at top,#14224a,#0a0f24 60%);color:#e6ecff;min-height:100vh}
+.nav-glass{background:rgba(10,15,36,.7);backdrop-filter:blur(10px);border-bottom:1px solid #ffffff1a}
+.card,.form-control,.form-select{background:#111a3a;border:1px solid #ffffff1f;color:#e6ecff}
+.form-control:focus,.form-select:focus{background:#111a3a;color:#fff;border-color:#38bdf8;box-shadow:none}
+.form-control::placeholder{color:#7d8ab0}.card{transition:.2s}.hov:hover{transform:translateY(-4px);border-color:#38bdf8}
+.hero{padding:90px 0;text-align:center;animation:fade .8s}.hero h1{font-size:3.2rem;font-weight:800;background:linear-gradient(90deg,#38bdf8,#818cf8);-webkit-background-clip:text;color:transparent}
+.stat{font-size:2rem;font-weight:700;color:#38bdf8}.table{--bs-table-bg:transparent;--bs-table-color:#e6ecff}
+.pass{max-width:420px;margin:auto;background:#fff;color:#111;border-radius:16px;overflow:hidden}.pass .top{background:linear-gradient(90deg,#0ea5e9,#6366f1);color:#fff;padding:16px;text-align:center}
+.res{border-radius:14px;padding:24px;text-align:center;font-size:1.1rem}.res.ok{background:#064e3b}.res.dup{background:#78350f}.res.bad{background:#7f1d1d}
+@keyframes fade{from{opacity:0;transform:translateY(16px)}to{opacity:1}}
+@media print{nav,footer,.noprint{display:none!important}body{background:#fff}}
