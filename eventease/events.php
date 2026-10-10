@@ -48,4 +48,8 @@ $cats=$pdo->query('SELECT DISTINCT category FROM events')->fetchAll(PDO::FETCH_C
   <p class="mb-2">Seats: <b><?=max(0,$ev['capacity']-$n)?></b> / <?=$ev['capacity']?> <span class="badge bg-<?=$bc?>"><?=$s?></span></p>
 <?php if($s=='Open')echo "<a class='btn btn-info mt-auto' href='register.php?event_id={$ev['id']}'>Register</a>";
   else echo "<button class='btn btn-secondary mt-auto' disabled>Unavailable</button>";?>
-                       </div></div><?php }?></div><?php foot();
+    </div>
+    </div>
+<?php }?>
+</div>
+<?php foot();
